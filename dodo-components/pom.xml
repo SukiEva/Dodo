@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.sukieva</groupId>
+    <artifactId>dodo-components-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <issueManagement>
+        <url>https://github.com/SukiEva/Dodo/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <id>SukiEva</id>
+            <name>SukiEva</name>
+            <email>dev.suki@outlook.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+            <url>https://github.com/SukiEva</url>
+        </developer>
+    </developers>
+</project>
