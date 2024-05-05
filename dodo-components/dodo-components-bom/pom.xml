@@ -5,14 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.sukieva</groupId>
-    <artifactId>dodo-components-parent</artifactId>
+    <artifactId>dodo-components-bom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-
-    <modules>
-        <module>dodo-components-bean</module>
-        <module>dodo-components-bom</module>
-    </modules>
+    <name>${project.artifactId}</name>
+    <description>${project.artifactId}</description>
+    <url>https://github.com/SukiEva/Dodo</url>
 
     <issueManagement>
         <url>https://github.com/SukiEva/Dodo/issues</url>
@@ -32,30 +30,13 @@
         </developer>
     </developers>
 
-    <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.boot.version>2.7.5</spring.boot.version>
-    </properties>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>com.github.sukieva</groupId>
+                <artifactId>dodo-components-bean</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 </project>
